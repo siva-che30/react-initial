@@ -3,6 +3,8 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
+import User from "./User";
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -34,6 +36,30 @@
 
 // export default App
 
-function Hello () {
-  return <h1>HELLO !</h1>
+function App () {
+
+  const siva = {
+    name :"Sivakumar",
+    age : 26,
+    phone : 1,
+  }
+  return<>
+<h1>HELLO !</h1>
+{/* <h2>Hello 2</h2>
+<p1>Sivakumar</p1>
+<p2>Sivakumar</p2> */}
+<User 
+// name = {siva.name}
+// age = {siva.age}
+// phone = {siva.phone}
+{...siva}
+/>
+  </> 
 }
+
+function Hello (){
+  return <h1>Welcome !</h1>
+}
+// export default App
+
+export {App,Hello}; 
